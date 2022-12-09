@@ -2,59 +2,40 @@ function ConfigInputs(){
     this.text= {
       type: "text",
       tag: "input",
-      maxlength: "",
-      autocomplete: "",
-      maxlength: "",
-      minlength: "",
       pattern: "",
       placeholder: "",
-      size: "",
       required: false,
-      list: ""
     }, 
     this.number= {
       type: "number",
       tag: "input",
-      list: "",
       placeholder: "",
-      autocomplete: "",
       min: "",
       max: "",
       step: "",
-      value: ""
+      required: false
     }, 
     this.date= {
       type: "date",
       tag: "input",
-      list: "",
-      autocomplete: "",
       min: "",
       max: "",
-      step: "",
-      valueAsNumber: ""
+      required: false
     }, 
     this.datetime= {
       type: "datetime-local",
       tag: "input",
       required: false,
-      autocomplete: "",
-      list: "",
-      step: "",
-      value: "",
-      valueAsNumber: ""
+      min: "",
+      max: "",
+      value: ""
     }, 
     this.email= {
       type: "email",
       tag: "input",
-      autocomplete: false,
-      list: "",
-      maxlength: "",
-      minlength: "",
-      multiple : false,
       pattern: "",
       placeholder: "",
       required: false,
-      size: "",
       value: ""
     },
     this.file= {
@@ -69,11 +50,10 @@ function ConfigInputs(){
     this.mesAno= {
       type: "month",
       tag: "input",
-      autocomplete: "",
-      list: "",
       required: false,
-      step: "",
-      value: ""
+      value: "",
+      min: "",
+      max: ""
     },
     this.telefone= {
       type: "tel",
@@ -91,11 +71,10 @@ function ConfigInputs(){
     this.hora= {
       type: "time",
       tag: "input",
-      autocomplete: "",
       required: false,
-      list: "",
-      step: "",
-      value: ""
+      value: "",
+      min: "",
+      max: ""
     },
     this.select= {
       id: "",
