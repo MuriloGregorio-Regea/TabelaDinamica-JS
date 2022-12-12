@@ -41,11 +41,7 @@ function ConfigInputs(){
     this.file= {
       type: "file",
       tag: "input",
-      required: false,
-      accept: "", 
-      capture: "",
-      multiple: false,
-      value: ""
+      required: false
     },
     this.mesAno= {
       type: "month",
@@ -58,9 +54,7 @@ function ConfigInputs(){
     this.telefone= {
       type: "tel",
       tag: "input",
-      autocomplete: "",
       required: false,
-      list: "",
       maxlength: "",
       minlength: "",
       pattern: "",
@@ -80,9 +74,7 @@ function ConfigInputs(){
       id: "",
       tag: "select",
       multiple: false,
-      required: false,
-      size: "",
-      value: ""
+      required: false
     },
     this.textArea= {
       tag: "textArea",

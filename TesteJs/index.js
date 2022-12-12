@@ -40,7 +40,10 @@ const addLinha = () => {
     email.required = true;
     */
 
+    /*
     const file = new ConfigInputs().file;
+    file.required = true;
+    */
 
     /*
     const mesAno = new ConfigInputs().mesAno;
@@ -49,7 +52,15 @@ const addLinha = () => {
     mesAno.max = "2022-12";
     */
 
+    /*
     const telefone = new ConfigInputs().telefone;
+    telefone.maxlength = 9;
+    telefone.minlength = 8;
+    telefone.pattern = "[0-9]{5}-[0-9]{4}";
+    telefone.placeholder = "90000-0000";
+    telefone.required = true;
+    telefone.value = "96111210";
+    */
 
     /*
     const hora = new ConfigInputs().hora;
@@ -58,16 +69,26 @@ const addLinha = () => {
     hora.max = "15:00";
     */
 
+    /*
     const select = new ConfigInputs().select;
+    select.multiple = true;
+    select.required = true;
+    select.size = 3;
+    select.value = "Algo";
+    */
 
+    /*
     const textArea = new ConfigInputs().textArea;
+    textArea.cols = 56;
+    textArea.rows = 3;
+    textArea.placeholder = "Escreva algo";
+    textArea.required = true;
+    textArea.value = "Algo";
+    textArea.maxlength = 250;
+    */
 
     const form = {
-        
-        "E-Mail": radio,
-        "Telefone": radio,
-        "Zapzap": email,
-        "Discord": disc
+        "Arquivos": file
     };
 
     buildFormTable('tabelaGenerica', form);
