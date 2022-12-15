@@ -1,13 +1,8 @@
 const addLinha = () => {
+    const departamento = new ConfigInputs().text;
+    departamento.value = "";
     
-    /*
-    const nome = new ConfigInputs().text;
-    nome.placeholder = "Digite um nome.";
-    nome.list = "Convidados"
-    nome.pattern = "[A-z]{10}";
-    nome.required = true;
-    */
-    
+
     /*
     const idade = new ConfigInputs().number;
     idade.max = 100;
@@ -69,13 +64,26 @@ const addLinha = () => {
     hora.max = "15:00";
     */
 
-    /*
-    const select = new ConfigInputs().select;
-    select.multiple = true;
-    select.required = true;
-    select.size = 3;
-    select.value = "Algo";
-    */
+    
+    const usuario = new ConfigInputs().select;
+    usuario.id = "uuidusuario";
+    usuario.required = true;
+
+    const tipoChamado = new ConfigInputs().select;
+    tipoChamado.id = "tipoChamado";
+    tipoChamado.required = true;
+
+    const chamado = new ConfigInputs().select;
+    chamado.id = "uuidchamado";
+    chamado.required = true;
+    
+    const atendenteChamado = new ConfigInputs().select;
+    atendenteChamado.id = "uuidusuario";
+    atendenteChamado.required = true;
+
+    const situacao = new ConfigInputs().select;
+    situacao.id = "uuidsituacao";
+    situacao.required = true;
 
     /*
     const textArea = new ConfigInputs().textArea;
@@ -88,10 +96,14 @@ const addLinha = () => {
     */
 
     const form = {
-        "Arquivos": file
+        "Usuario": usuario,
+        "Departamento": departamento,
+        "Tipo Chamado": tipoChamado,
+        "Chamado": chamado,
+        "Atendente": atendenteChamado,
+        "Situação": situacao
     };
 
     buildFormTable('tabelaGenerica', form);
-    
-};
 
+};

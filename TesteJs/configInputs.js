@@ -1,12 +1,13 @@
-function ConfigInputs(){
-    this.text= {
-      type: "text",
-      tag: "input",
-      pattern: "",
-      placeholder: "",
-      required: false,
-    }, 
-    this.number= {
+function ConfigInputs() {
+  this.text = {
+    type: "text",
+    tag: "input",
+    pattern: "",
+    placeholder: "",
+    required: false,
+    value: ""
+  },
+    this.number = {
       type: "number",
       tag: "input",
       placeholder: "",
@@ -14,23 +15,23 @@ function ConfigInputs(){
       max: "",
       step: "",
       required: false
-    }, 
-    this.date= {
+    },
+    this.date = {
       type: "date",
       tag: "input",
       min: "",
       max: "",
       required: false
-    }, 
-    this.datetime= {
+    },
+    this.datetime = {
       type: "datetime-local",
       tag: "input",
       required: false,
       min: "",
       max: "",
       value: ""
-    }, 
-    this.email= {
+    },
+    this.email = {
       type: "email",
       tag: "input",
       pattern: "",
@@ -38,12 +39,12 @@ function ConfigInputs(){
       required: false,
       value: ""
     },
-    this.file= {
+    this.file = {
       type: "file",
       tag: "input",
       required: false
     },
-    this.mesAno= {
+    this.mesAno = {
       type: "month",
       tag: "input",
       required: false,
@@ -51,7 +52,7 @@ function ConfigInputs(){
       min: "",
       max: ""
     },
-    this.telefone= {
+    this.telefone = {
       type: "tel",
       tag: "input",
       required: false,
@@ -59,10 +60,10 @@ function ConfigInputs(){
       minlength: "",
       pattern: "",
       placeholder: "",
-      size:"",
+      size: "",
       value: ""
     },
-    this.hora= {
+    this.hora = {
       type: "time",
       tag: "input",
       required: false,
@@ -70,13 +71,13 @@ function ConfigInputs(){
       min: "",
       max: ""
     },
-    this.select= {
+    this.select = {
       id: "",
       tag: "select",
       multiple: false,
       required: false
     },
-    this.textArea= {
+    this.textArea = {
       tag: "textArea",
       cols: "",
       maxlength: "",
@@ -85,8 +86,8 @@ function ConfigInputs(){
       rows: "",
       wrap: "",
       value: ""
-    }, 
-    this.checkbox= {
+    },
+    this.checkbox = {
       type: "checkbox",
       tag: "input",
       value: "",
@@ -94,12 +95,12 @@ function ConfigInputs(){
       indeterminate: false,
       required: false
     },
-    this.radio= {
+    this.radio = {
       type: "radio",
       tag: "input",
       value: "",
-      checked: "",
-      required: ""
+      checked: false,
+      required: false
     }
 
 };

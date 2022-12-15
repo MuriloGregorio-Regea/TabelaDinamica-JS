@@ -22,16 +22,9 @@ function buildFormTable(_id, _form) {
   for (key in _form) {
 
     var cell = document.createElement("td");
+    cell.className = "col-md-2 ms-auto"
+    cell.colSpan = 1;
     row.appendChild(cell);
-
-    var div = document.createElement("div");
-    div.className = "input-group";
-    cell.appendChild(div);
-
-    var span = document.createElement("span");
-    span.innerHTML = key + ":";
-    span.className = "input-group-text";
-    div.appendChild(span);
 
     var field = _form[key];
     var input = document.createElement(field?.tag);
@@ -47,14 +40,14 @@ function buildFormTable(_id, _form) {
     field?.cols ? input.cols = field?.cols : false;
     field?.rows ? input.rows = field?.rows : false;
     field?.value ? input.value = field?.value : false;
-    //field?.checked ? input.checked = field?.checked: false;
+    field?.checked ? input.checked = field?.checked : false;
     field?.pattern ? input.pattern = field?.pattern : false;
     field?.maxlength ? input.maxlength = field?.maxlength : false;
     field?.minlength ? input.minlength = field?.minlength : false;
     field?.placeholder ? input.placeholder = field?.placeholder : false;
-    //field?.indeterminate ? input.indeterminate = field?.indeterminate : false;
+    field?.indeterminate ? input.indeterminate = field?.indeterminate : false;
 
-        div.appendChild(input);
+    cell.appendChild(input);
 
   }
 
