@@ -22,7 +22,7 @@ function buildFormTable(_id, _form) {
   for (key in _form) {
 
     var cell = document.createElement("td");
-    cell.className = "col-md-2 ms-auto"
+    cell.className = "col-md-1 ms-auto"
     cell.colSpan = 1;
     row.appendChild(cell);
 

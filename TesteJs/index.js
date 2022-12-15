@@ -1,8 +1,14 @@
 const addLinha = () => {
     const departamento = new ConfigInputs().text;
+    departamento.id = "departa";
     departamento.value = "";
-    
+    departamento.disabled = true;
 
+    const protocolo = new ConfigInputs().text;
+    protocolo.id = "protocolo";
+    protocolo.value = "";
+    departamento.disabled = true;
+    
     /*
     const idade = new ConfigInputs().number;
     idade.max = 100;
@@ -96,12 +102,13 @@ const addLinha = () => {
     */
 
     const form = {
-        "Usuario": usuario,
-        "Departamento": departamento,
+        "Número Protocolo": protocolo,
         "Tipo Chamado": tipoChamado,
         "Chamado": chamado,
-        "Atendente": atendenteChamado,
-        "Situação": situacao
+        "Situação": situacao,
+        "Responsável": atendenteChamado,
+        "Usuario": usuario,
+        "Departamento": departamento
     };
 
     buildFormTable('tabelaGenerica', form);
