@@ -1,6 +1,6 @@
 //Função para adicionar uma nova linha na tabela
 function addToTable() {
-
+    debugger
     //Definindo as variaveis e recebendo os dados
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
